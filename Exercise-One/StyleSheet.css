@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+.outer{
+    margin:auto;
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.one{
+    float: left;
+  width: 33.33%;
+  padding: 10px;
+    height: fit-content;
+    margin: auto;
+    border-style: solid;
+    border-width: thick;
+    background-color: blue;
+    animation-name: one;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes one {
+    0%   {background-color: blue;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  75% {background-color: yellow;}
+  100% {background-color: blue;}
+}
+
+.message-one{
+    background-color: blue;
+    color: white;
+    font-size: xx-large;
+    height: fit-content;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    text-align: center;
+    animation-name: message-one;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes message-one {
+    0% {background-color: blue; color: white;}
+    25% {background-color: yellow; color: black;}
+    50% {background-color: blue; color: white;}
+    75% {background-color: yellow; color: black;}
+    100% {background-color: blue; color: white;}
+}
+
+.two{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: fit-content;
+    margin: auto;
+    border-style: solid;
+    border-width: thick;
+    background-color: white;
+}
+
+
+.message-two{
+    background-color: white;
+    color: black;
+    font-size: xx-large;
+    height: 30%;
+    width: 30%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    padding-left: 50%;
+    padding-right: 50%;
+    text-align: center;
+    animation-name: message-two;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes message-two {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+
+}
+
+
+.three{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    border-style: solid;
+    border-width: thick;
+    height: fit-content;
+    margin: auto;
+    background-color: blue;
+}
+
+.message-three{
+    background-color: blue;
+    color: black;
+    height: 50%;
+    width: 50%;
+    padding-left: 50%;
+    padding-right: 50%;
+    text-align: center;
+    font-size: xx-large;
+    animation-name: message-three;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes message-three {
+    from{
+        color: black;
+        margin-top: 100%;
+    }
+    to{
+        color: white;
+        margin-bottom: 0%;
+    }
+}
+
+.outer:after {
+    content: "";
+    display: table;
+    clear: both;
+    border: 10px white;
+}
